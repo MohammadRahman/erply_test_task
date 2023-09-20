@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+      <ul>
+        <li>Invoices</li>
+      </ul>
+      <ul class="button-group">
+        <li>
+          <button class="export-button button">
+            <img src="/icons/Arrow.svg" alt="icon-arrow"/>
+            Export
+          </button>
+        </li>
+        <li>
+          <button class="add-new-button button">
+            <img src="/icons/Plus.svg" alt="icon-plus"/>
+            New
+          </button>
+        </li>
+        <li>
+          <button class="icon button">
+            <img src="/icons/Filter.svg" alt="icon-filter"/>
+          </button>
+        </li>
+        <li>
+          <button class="icon button">
+            <img src="/icons/More Horizontal.svg" alt="icon-more"/>
+          </button>
+        </li>
+      </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <table>
+          <div class="pagination">
+              <div class="pagination-content">
+                <p>Result per page</p>
+                <button class="pagination-button button">20
+                    <img src="/icons/Chevron-Down.svg" alt="arrow-down"/>
+                </button>
+              </div>
+              <div class="pagination-content">
+                <button class="icon button">
+                    <img src="/icons/Chevron-Left.svg" alt="arrow-left"/>
+                </button>
+                <span>1</span>
+                <button class="icon button">
+                    <img src="/icons/Chevron-Right.svg" alt="arrow-right"/>
+                </button>
+              </div>
+              <div class="pagination-content">
+                <p>Page</p>
+                <button class="pagination-button button">
+                    20
+                    <img src="/icons/Chevron-Down.svg" alt="arrow-down"/>
+                </button>
+              </div>
+                <thead>
+                    <tr class="table-header">
+                        <th class="checkbox-icon common-col">
+                         <img src="/icons/Checkbox-Filled.svg" alt="icon-checkbox-filled">
+                        </th>
+                        <th class="type common-col">Type</th>
+                        <th class="date common-col">Date</th>
+                        <th class="customers common-col">Customer</th>
+                        <th class="location common-col">Location</th>
+                        <th class="state-col common-col">State</th>
+                        <th class="total common-col">Total</th>
+                        <th class="action common-col"></th>
+                    </tr>
+                </thead>
+          <tbody>
+            <tr>
+                <td class="common-col">
+                    <img src="/icons/Checkbox-UnMark.svg" alt="checkbox-empty">
+                </td>
+                <td class="common-col">
+                   <p>Receipt</p>
+                   <p>#10048</p>
+                </td>
+                <td class="common-col">
+                    <p>21.10.2022</p>
+                </td>
+                <td class="common-col">
+                    <p>Lydia Dias</p>
+                </td>
+                <td class="common-col">
+                    <p>Location #12</p>
+                </td>
+                <td class="common-col">
+                    <button class="status-in-progress state">
+                        <img src="/icons/status-In-Progress.png"/>
+                        IN PROGRESS
+                    </button>
+                </td>
+                <td><p>129.00 €</p></td>
+                <td>
+                    <img src="/icons/More Horizontal.svg" alt="more"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="common-col">
+                    <img src="/icons/Checkbox-UnMark.svg" alt="checkbox-empty">
+                </td>
+                <td class="common-col">
+                   <p>Receipt</p>
+                   <p>#10048</p>
+                </td>
+                <td class="common-col">
+                    <p>21.10.2022</p>
+                    <button class="status">DUE 2 DAYS AGO</button>
+                </td>
+                <td class="common-col">
+                    <p>Lydia Dias</p>
+                </td>
+                <td class="common-col">
+                    <p>Location #12</p>
+                </td>
+                <td class="common-col">
+                    <button class="status-pending state">
+                        <img src="/icons/Status-Pending.png"/>
+                        PENDING
+                    </button>
+                </td>
+                <td>
+                    <p>4147.20 €</p>
+                    <button class="status">
+                        UNPAID 200.29 €
+                    </button>
+                </td>
+                <td>
+                    <img src="/icons/More Horizontal.svg" alt="more"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="common-col">
+                    <img src="/icons/Checkbox-UnMark.svg" alt="checkbox-empty">
+                </td>
+                <td class="common-col">
+                   <p>Receipt</p>
+                   <p>#10048</p>
+                </td>
+                <td class="common-col">
+                    <p>21.10.2022</p>
+                    <button class="status">DUE 2 DAYS AGO</button>
+                </td>
+                <td class="common-col">
+                    <p>Lydia Dias</p>
+                </td>
+                <td class="common-col">
+                    <p>Location #12</p>
+                </td>
+                <td class="common-col">
+                    <button class="status-success state">
+                        <img src="/icons/Status-Success.svg" alt="icon-success"/>
+                        SUCCESS
+                    </button>
+                </td>
+                <td>
+                    <p>4147.20 €</p>
+                    <button class="status">
+                        UNPAID 200.29 €
+                    </button>
+                </td>
+                <td>
+                    <img src="/icons/More Horizontal.svg" alt="more"/>
+                </td>
+            </tr>
+            <tr class="selected">
+                <td class="common-col">
+                    <img src="/icons/Checkbox-Selected.png" alt="checkbox-empty">
+                </td>
+                <td class="common-col">
+                   <p>Receipt</p>
+                   <p>#10048</p>
+                </td>
+                <td class="common-col">
+                    <p>21.10.2022</p>
+                    <button class="status">DUE 2 DAYS AGO</button>
+                </td>
+                <td class="common-col">
+                    <p>Lydia Dias</p>
+                </td>
+                <td class="common-col">
+                    <p>Location #12</p>
+                </td>
+                <td class="common-col">
+                    <button class="status-complete state">
+                        <img src="/icons/Status-Completed.svg" alt="icon-complete"/>
+                        COMPLETE
+                    </button>
+                </td>
+                <td>
+                    <p>4147.20 €</p>
+                    <button class="status">
+                        UNPAID 200.29 €
+                    </button>
+                </td>
+                <td>
+                    <img src="/icons/More Horizontal.svg" alt="more"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="common-col">
+                    <img src="/icons/Checkbox-UnMark.svg" alt="checkbox-empty">
+                </td>
+                <td class="common-col">
+                   <p>Receipt</p>
+                   <p>#10048</p>
+                </td>
+                <td class="common-col">
+                    <p>21.10.2022</p>
+                    <button class="status">DUE 2 DAYS AGO</button>
+                </td>
+                <td class="common-col">
+                    <p>Lydia Dias</p>
+                </td>
+                <td class="common-col">
+                    <p>Location #12</p>
+                </td>
+                <td class="common-col">
+                    <button class="status-in-progress state">
+                        <img src="/icons/Status-In-Progress.svg" alt="icon-in-progress"/>
+                        IN PROGRESS
+                    </button>
+                </td>
+                <td>
+                    <p>4147.20 €</p>
+                    <button class="status">
+                        UNPAID 200.29 €
+                    </button>
+                </td>
+                <td>
+                    <img src="/icons/More Horizontal.svg" alt="more"/>
+                </td>
+            </tr>
+            <tr class="selected">
+                <td class="common-col">
+                    <img src="/icons/Checkbox-Selected.png" alt="checkbox-selected">
+                </td>
+                <td class="common-col">
+                   <p>Receipt</p>
+                   <p>#10048</p>
+                </td>
+                <td class="common-col">
+                    <p>21.10.2022</p>
+                    <button class="status">DUE 2 DAYS AGO</button>
+                </td>
+                <td class="common-col">
+                    <p>Lydia Dias</p>
+                </td>
+                <td class="common-col">
+                    <p>Location #12</p>
+                </td>
+                <td class="common-col">
+                    <button class="status-pending state">
+                        <img src="/icons/Status-Pending.png"/>
+                        PENDING
+                    </button>
+                </td>
+                <td>
+                    <p>4147.20 €</p>
+                    <button class="status">
+                        UNPAID 200.29 €
+                    </button>
+                </td>
+                <td>
+                    <img src="/icons/More Horizontal.svg" alt="more"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="common-col">
+                    <img src="/icons/Checkbox-UnMark.svg" alt="checkbox-empty">
+                </td>
+                <td class="common-col">
+                   <p>Receipt</p>
+                   <p>#10048</p>
+                </td>
+                <td class="common-col">
+                    <p>21.10.2022</p>
+                    <button class="status">DUE 2 DAYS AGO</button>
+                </td>
+                <td class="common-col">
+                    <p>Lydia Dias</p>
+                </td>
+                <td class="common-col">
+                    <p>Location #12</p>
+                </td>
+                <td class="common-col">
+                    <button class="status-success state">
+                        <img src="/icons/Status-Success.svg" alt="icon-success"/>
+                        SUCCESS
+                    </button>
+                </td>
+                <td>
+                    <p>4147.20 €</p>
+                    <button class="status">
+                        UNPAID 200.29 €
+                    </button>
+                </td>
+                <td>
+                    <img src="/icons/More Horizontal.svg" alt="more"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="common-col">
+                    <img src="/icons/Checkbox-UnMark.svg" alt="checkbox-empty">
+                </td>
+                <td class="common-col">
+                   <p>Receipt</p>
+                   <p>#10048</p>
+                </td>
+                <td class="common-col">
+                    <p>21.10.2022</p>
+                    <button class="status">DUE 2 DAYS AGO</button>
+                </td>
+                <td class="common-col">
+                    <p>Lydia Dias</p>
+                </td>
+                <td class="common-col">
+                    <p>Location #12</p>
+                </td>
+                <td class="common-col">
+                    <button class="status-complete state">
+                        <img src="/icons/Status-Completed.svg" alt="icon-complete"/>
+                        COMPLETE
+                    </button>
+                </td>
+                <td>
+                    <p>4147.20 €</p>
+                    <button class="status">
+                        UNPAID 200.29 €
+                    </button>
+                </td>
+                <td>
+                    <img src="/icons/More Horizontal.svg" alt="more"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="common-col">
+                    <img src="/icons/Checkbox-UnMark.svg" alt="checkbox-empty">
+                </td>
+                <td class="common-col">
+                   <p>Receipt</p>
+                   <p>#10048</p>
+                </td>
+                <td class="common-col">
+                    <p>21.10.2022</p>
+                    <button class="status">DUE 2 DAYS AGO</button>
+                </td>
+                <td class="common-col">
+                    <p>Lydia Dias</p>
+                </td>
+                <td class="common-col">
+                    <p>Location #12</p>
+                </td>
+                <td class="common-col">
+                      <button class="status-complete state">
+                        <img src="/icons/Status-Completed.svg" alt="icon-complete"/>
+                        COMPLETE
+                    </button>
+                </td>
+                <td>
+                    <p>4147.20 €</p>
+                    <button class="status">
+                        UNPAID 200.29 €
+                    </button>
+                </td>
+                <td>
+                    <img src="/icons/More Horizontal.svg" alt="more"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="common-col">
+                    <img src="/icons/Checkbox-UnMark.svg" alt="checkbox-empty">
+                </td>
+                <td class="common-col">
+                   <p>Receipt</p>
+                   <p>#10048</p>
+                </td>
+                <td class="common-col">
+                    <p>21.10.2022</p>
+                    <button class="status">DUE 2 DAYS AGO</button>
+                </td>
+                <td class="common-col">
+                    <p>Lydia Dias</p>
+                </td>
+                <td class="common-col">
+                    <p>Location #12</p>
+                </td>
+                <td class="common-col">
+                     <button class="status-complete state">
+                        <img src="/icons/Status-Completed.svg" alt="icon-complete"/>
+                        COMPLETE
+                    </button>
+                </td>
+                <td>
+                    <p>4147.20 €</p>
+                    <button class="status">
+                        UNPAID 200.29 €
+                    </button>
+                </td>
+                <td>
+                    <img src="/icons/More Horizontal.svg" alt="more"/>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <aside class="sidebar">
+            <div class="customer-pannel-top-bar">
+                <h2>Customers</h2>
+                <button class="add-button button">
+                    <img src="/icons/Person.svg" alt="icon-person"/>
+                    Add
+                </button>
+            </div>
+            <p class="customer-pannel-letters-A-Z">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <div class="search-container">
+                <div class="search-box">
+                    <img src="/icons/Search.svg"/>
+                    <input
+                    class="search-input" 
+                    type="text"
+                    />
+                </div>
+                <button class="search-button button">Search</button>
+            </div>
+            <div class="customers-list">
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Marathon Oil Corp.</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Sealed Air</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Southern Company</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Atmos Energy</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Equifax Inc.</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Kansas City Southern</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Fidelity National Information Services</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Colgate-Palmolive</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Air Products & Chemicals Inc</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Intuitive Surgical Inc.</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Quest Diagnostics</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Crown Castle International Corp.</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>News Corp. Class A</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Federal Realty Investment Trust</p>
+                </span>
+                <span class="customer">
+                    <img src="/icons/Ellipse.svg"/>
+                    <p>Humana Inc.</p>
+                </span>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-header">
+                <h2 class="card-title">Add customers</h2>
+                <img class="card-close-icon" src="/icons/Close.svg" alt="icon-close"/>
+                    </span>
+              
+                <p class="card-text">
+                    You can add customers by pessing the Add + button
+                     in the corner or by importing your clients
+                      from a CSV file
+                </p>
+                <button class="import-button button">
+                    <img src="/icons/Cloud.svg" alt="icon-svg"/>
+                    Import Customers</button>
+                </div>
+            </div>
+      </aside>
+    </main>
+  </body>
+</html>
